@@ -18,3 +18,9 @@ gulp.task('copyHTML', function(){
    gulp.src('src/*.html') 
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task('default', ['message', 'copyHTML']);
+
+gulp.task('watch', function(){
+    gulp.watch('js/*.js', [/* Task to run*/]);
+});
